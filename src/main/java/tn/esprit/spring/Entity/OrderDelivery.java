@@ -22,7 +22,7 @@ public class OrderDelivery implements Serializable{
 	 */
 	private static final long serialVersionUID = -6369816899702631928L;
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String orderState;
 	private String paymentMode;

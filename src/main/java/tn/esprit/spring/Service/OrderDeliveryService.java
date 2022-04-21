@@ -120,15 +120,11 @@ public class OrderDeliveryService implements ImpOrderDeliveryService{
 //email	
 	@Override
 	public void sendEmail(int userId) {
-
         SimpleMailMessage msg = new SimpleMailMessage();
         msg.setTo(userRepository.findById(userId).get().getEmail());
-
         msg.setSubject("ConsomiTounsi");
         msg.setText("Delivery will come soon call us for more information \n Thank you for your confidence."
-        		);
-       
-
+        		);    
         javaMailSender.send(msg);
 
     }

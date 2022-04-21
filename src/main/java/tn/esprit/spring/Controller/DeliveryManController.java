@@ -17,8 +17,9 @@ import org.springframework.web.multipart.MultipartFile;
 import tn.esprit.spring.Entity.DeliveryMan;
 import tn.esprit.spring.Repository.DeliveryManRepository;
 import tn.esprit.spring.Service.DeliveryManService;
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
+
 	public class DeliveryManController {
 		@Autowired
 		private DeliveryManService deliveryManService;
